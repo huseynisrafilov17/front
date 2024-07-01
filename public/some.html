@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Paragraph</title>
+  <style>
+    .editable-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .edit-button {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .save-button {
+      margin-left: 10px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .input-field {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="editable-container">
+    <p id="editable-paragraph">This is an editable paragraph. <button class="edit-button">Edit</button></p>
+    <input type="text" id="input-field" class="input-field">
+    <button class="save-button" id="save-button">Save</button>
+  </div>
+
+  <script>
+    const paragraph = document.getElementById('editable-paragraph');
+    const inputField = document.getElementById('input-field');
+    const editButton = document.querySelector('.edit-button');
+    const saveButton = document.getElementById('save-button');
+
+    editButton.addEventListener('click', () => {
+      inputField.value = paragraph.innerText.replace('Edit', '').trim(); // Get text without the 'Edit' button
+      paragraph.style.display = 'none';
+      inputField.style.display = 'inline-block';
+      saveButton.style.display = 'inline-block';
+    });
+
+    saveButton.addEventListener('click', () => {
+      paragraph.innerHTML = inputField.value + ' <button class="edit-button">Edit</button>';
+      inputField.style.display = 'none';
+      saveButton.style.display = 'none';
+      paragraph.style.display = 'inline-block';
+
+      // Reattach the edit button event listener
+      document.querySelector('.edit-button').addEventListener('click', () => {
+        inputField.value = paragraph.innerText.replace('Edit', '').trim(); // Get text without the 'Edit' button
+        paragraph.style.display = 'none';
+        inputField.style.display = 'inline-block';
+        saveButton.style.display = 'inline-block';
+      });
+    });
+  </script>
+</body>
+</html>

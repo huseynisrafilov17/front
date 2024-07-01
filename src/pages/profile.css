@@ -1,0 +1,151 @@
+.invisible {
+  display: none !important;
+}
+
+.white-item {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.coming-soon {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.logoutButton {
+  display: flex;
+  justify-content: center;
+}
+
+.logoutButton button {
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 80px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.profile-section .white-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-section .white-item img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.profile-section .white-item div p {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 0 20px;
+}
+
+.profile-section .white-item div div p {
+  display: inline-block;
+}
+
+.profile-section .white-item div input,
+.profile-section .white-item div select {
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 0 20px;
+  border: none;
+}
+
+.profile-section .white-item div button {
+  padding: 2px 5px;
+  margin-left: 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: #a4c4c8;
+  font-weight: normal;
+  color: white;
+}
+
+.profile-section .white-item .stats {
+  padding: 20px;
+  width: 50%;
+  background-color: #6fafb8;
+  opacity: 0.5;
+  border-radius: 20px;
+}
+
+.profile-section .white-item .stats p {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  color: black;
+  margin: 0 0 10px 0;
+  padding: 10px 30px;
+  border-radius: 80px;
+}
+
+.title-for-section {
+  padding: 20px 100px;
+  width: fit-content;
+  margin-bottom: 30px;
+  background-color: #6fafb8;
+  opacity: 0.5;
+  border-radius: 60px;
+  color: white;
+  font-weight: bolder;
+}
+
+.profile-about-section .white-item p:last-of-type {
+  color: #5b868d;
+}
+
+.white-item h1 {
+  margin-bottom: 20px;
+  color: #0c1729;
+  opacity: 0.7;
+}
+
+.service-profile-section .white-item div {
+  display: flex;
+}
+
+.service-profile-section .white-item div img {
+  width: 128px;
+  height: 128px;
+  margin-right: 20px;
+}
+
+.service-profile-section .white-item div p {
+  color: #5b868d;
+}
+
+.service-developers-section .white-item div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.service-developers-section .white-item div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-developers-section .white-item div div img {
+  width: 124px;
+  height: 124px;
+}
+
+.service-developers-section .white-item div div p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.service-details-section .white-item p {
+  color: #5b868d;
+}

@@ -1,0 +1,121 @@
+.loginSignup {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  background-color: red;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.success-message {
+  background-color: palegreen;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.loginSignup .left-side {
+  width: 50%;
+}
+.loginSignup .left-side img {
+  display: block;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.loginSignup .left-side div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginSignup .left-side button {
+  background-color: white;
+  color: #5b868d;
+  border: none;
+  font-weight: bolder;
+  padding: 7px 15px;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.loginSignup .left-side a {
+  text-decoration: none;
+  color: #5b868d;
+}
+.loginSignup .left-side .active {
+  background-color: #5b868d;
+  color: white;
+}
+
+.loginSignup .right-side {
+  width: 45%;
+}
+
+.loginSignup .right-side form {
+  background-color: #d9d9d9;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.loginSignup .right-side form input,
+.loginSignup .right-side form select,
+.loginSignup .right-side form option {
+  color: #5b868d;
+  background: transparent;
+  border: 1px solid #5b868d;
+  outline: none;
+  padding: 7px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.loginSignup .right-side form a {
+  text-decoration: none;
+  color: #0c1729;
+  font-weight: bold;
+}
+
+.loginSignup .right-side form div {
+  display: flex;
+  align-items: baseline;
+}
+
+.loginSignup .right-side form div:first-child {
+  justify-content: space-between;
+}
+
+.loginSignup .right-side form .submit {
+  margin: 20px 0;
+  background-color: #0c1729;
+  color: white;
+  width: 150px;
+  opacity: 0.8;
+}
+
+.loginSignup .right-side form div a {
+  text-decoration: none;
+  color: #5b868d;
+  margin-left: 5px;
+}
+
+.loginSignup .right-side form div input[type="text"] {
+  width: 40%;
+}
+
+.loginSignup .right-side form hr {
+  border: none;
+  border-top: 0.8px solid #5b868d;
+  margin: 10px 0;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 14px;
+}

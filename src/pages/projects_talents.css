@@ -1,0 +1,44 @@
+.categorizedProject-section {
+  display: flex;
+}
+
+.categorizedProject-section .left-side {
+  background-color: rgba(217, 217, 217, 30%);
+  min-width: fit-content;
+  color: rgba(12, 23, 41, 70%);
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-right: 20px;
+  height: max-content;
+}
+
+.categorizedProject-section .left-side h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.categorizedProject-section .left-side h2:last-child {
+  margin-top: 15px;
+}
+
+.categorizedProject-section .left-side .project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.categorizedProject-section .left-side .project label:last-child {
+  margin-left: 5px;
+}
+
+.categorizedProject-section .right-side {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.categorizedProject-section .right-side .talent-card {
+  margin-right: 20px;
+  width: 25%;
+}
